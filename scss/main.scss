@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import 'config';
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    transition: background-color 500ms;
+
+}
+
+#changeColorButton {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border: 2px solid $secondary-color;
+
+
+    &:hover {
+        background-color: $secondary-color;
+        border: solid 2px $primary-color;
+    }
+}
+
+.btn-outline-secondary:hover {
+    background-color: $primary-color;
+}
+
+.padding {
+    padding-bottom: 20px;
+}
+
+.about-us {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+
+    & hr {
+        border-top: 2px solid $secondary-color;
+        width: 95%;
+        margin-top: .3rem;
+        margin-bottom: 1rem;
+    }
+
+    #about-us {
+        padding-left: 30px;
+    }
+}
+
+#catering1 {
+    display: flex;
+    margin: auto;
+    text-align: center;
+
+    & a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.social {
+    a {
+        font-size: 4.5em;
+        padding: 3rem;
+
+        &.fa-facebook {
+            color: #3b5998;
+        }
+
+        &.fa-twitter {
+            color: #00aced;
+        }
+
+        &.fa-instagram {
+            color: #5851DB;
+        }
+
+        &:hover {
+            color: grey;
+        }
+    }
+}
+
+
+footer {
+    background-color: #3f3f3f;
+    color: white;
+    padding-top: 2rem;
+
+    a {
+        color: white;
+
+        &:hover {
+            text-decoration: none;
+            color: $secondary-color;
+        }
+    }
+
+    hr {
+        border-top: 1px solid $secondary-color;
+        width: 75%;
+        margin-top: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    #end-hr {
+        border-top: 1px solid #BD9C74;
+        width: 100%;
+        margin-top: .8rem;
+        margin-bottom: 1rem;
+    }
+
+    #copyright {
+        color: $secondary-color;
+
+        &:hover {
+            transform: translateY(0) scale(1.2);
+            letter-spacing: 2px;
+            transition: 0.7s;
+            text-decoration: none;
+            color: $primary-color;
+        }
+    }
+}
+
+.card-body img {
+    height: 200px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .social a {
+        font-size: 64px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social a {
+        font-size: 40px;
+        padding: 19px;
+    }
+}
+
+@media (max-width: 576px) {
+    .social a {
+        font-size: 30px;
+        padding: 11px;
+    }
+}
